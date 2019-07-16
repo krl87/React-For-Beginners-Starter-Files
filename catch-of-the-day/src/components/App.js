@@ -33,7 +33,7 @@ class App extends React.Component {
     order[key] = order[key] + 1 || 1;
     // 3. call setstate to update our state object
     this.setState({
-      order: order
+      order
     })
   }
 
@@ -53,7 +53,7 @@ class App extends React.Component {
               ))}
           </ul>
         </div>
-        <Order />
+        <Order fishes={this.state.fishes} order={this.state.order} />
         <Inventory addFish={this.addFish} loadSampleFishes={this.loadSampleFishes} />
       </div>
     );

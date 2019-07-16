@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import { formatPrice } from '../helpers.js';
 
 class Fish extends React.Component {
